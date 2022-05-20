@@ -38,7 +38,7 @@ arquivo = open("objetos.pkl", "rb")
 ss, classifier = pickle.load(arquivo)
 arquivo.close()
 
-estrutura = {'radius0' : 0radius, '0texture': texture0, '0smoothness' : smoothness0, '0concave points': concave_points0,
+estrutura = {'0radius' : radius0, '0texture': texture0, '0smoothness' : smoothness0, '0concave points': concave_points0,
                '0symmetry' : symmetry0, '0fractal dimension' : fractal_dimension0, '1radius' : radius1, '1texture': texture1,
                '1smoothness' : smoothness1, '1concave points': concave_points1, '1symmetry' : symmetry1, '1fractal dimension' : fractal_dimension1,
                '2radius' : radius2, '2texture': texture2, '2smoothness' : smoothness2, '2concave points': concave_points2,
