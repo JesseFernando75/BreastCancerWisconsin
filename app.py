@@ -55,12 +55,12 @@ st.write(df)
 predicao = classifier.predict(df)
 st.write(f"A classe é: **{predicao[0]}**")
   
-predicao = classifier.predict_proba(df)
-predicao = pd.DataFrame(predicao)
-predicao.rename({
-    0 : 'Maligno',
-    1 : 'Benigno'
-}, axis=1, inplace=True)
+#predicao = classifier.predict_proba(df)
+#predicao = pd.DataFrame(predicao)
+#predicao.rename({
+    #0 : 'Maligno',
+    #1 : 'Benigno'
+#}, axis=1, inplace=True)
   
-st.write("Probabilidades")
-st.write(predicao)
+#st.write("Probabilidades")
+#st.write(predicao)
