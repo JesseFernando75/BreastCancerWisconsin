@@ -33,7 +33,7 @@ texture2 = st.sidebar.slider("Texture", 12.020000, 49.54000, 10.0, 0.1)
 smoothness2 = st.sidebar.slider("Smoothness", 0.071170, 0.22260, 0.12, 0.1)
 concave_points2 = st.sidebar.slider("Concave points", 0.0, 0.29100, 0.29, 0.1)
 symmetry2 = st.sidebar.slider("Symmetry", 0.156500, 0.66380, 0.30, 0.1)
-fractal_dimension2 = st.sidebar.slider("Fractal dimension", 0.055040, 0.20750, 0.20, 0.1)
+fractal_dimension2 = st.sidebar.slider("Fractal dimension", 0.055040, 0.20750, 0.055040, 0.1)
 
 arquivo = open('objetos.pkl', 'rb')
 ss, classifier = pickle.load(arquivo)
