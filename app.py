@@ -10,7 +10,7 @@ st.write("## Verificação se o câncear é maligno ou benigno")
 
 st.sidebar.write("### Parâmetros 0")
 
-radius0 = st.sidebar.slider("Radius", 7.0, 29, 12.0, 0.1)
+radius0 = st.sidebar.slider("Radius", 7.0, 29.0, 12.0, 0.1)
 texture0 = st.sidebar.slider("Texture", 9.8, 40.0, 22.0, 0.1)
 smoothness0 = st.sidebar.slider("Smoothness", 0.06, 0.17, 0.13, 0.1)
 concave_points0 = st.sidebar.slider("Concave points", 0.0, 0.21, 0.10, 0.1)
