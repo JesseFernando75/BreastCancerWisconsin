@@ -77,8 +77,8 @@ with open("objetos.pkl", "rb") as arquivo:
   predicao = classifier.predict_proba(df)
   predicao = pd.DataFrame(predicao)
   predicao.rename({
-     'M' : 0,
-     'B' : 1
+     0 : 'M',
+     1 : 'B'
   }, axis=1, inplace=True)
   
   st.write("Probabilidades")
