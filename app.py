@@ -52,7 +52,7 @@ st.write(df)
 df = ss.transform(df)
 st.write(df)
   
-#predicao = classifier.predict(df)
+predicao = classifier.predict(df)
 #st.write(f"A classe é: **{predicao[0]}**")
   
 #predicao = classifier.predict_proba(df)
