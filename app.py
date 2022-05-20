@@ -6,7 +6,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 st.title('Breast Cancer Wisconsin')
 st.write("## Verificação se o câncear é maligno ou benigno")
-#st.write("## Breast Cancer Wisconsin")
+st.write("## Breast Cancer Wisconsin")
 
 st.sidebar.write("### Parâmetros 0")
 
@@ -53,15 +53,15 @@ st.write(df)
 df = ss.transform(df)
 st.write(df)
   
-#predicao = classifier.predict(df)
-#st.write(f"A classe é: **{predicao[0]}**")
+predicao = classifier.predict(df)
+st.write(f"A classe é: **{predicao[0]}**")
   
-#predicao = classifier.predict_proba(df)
-#predicao = pd.DataFrame(predicao)
-#predicao.rename({
-    #0 : 'Maligno',
-    #1 : 'Benigno'
-#}, axis=1, inplace=True)
+predicao = classifier.predict_proba(df)
+predicao = pd.DataFrame(predicao)
+predicao.rename({
+    0 : 'Maligno',
+    1 : 'Benigno'
+}, axis=1, inplace=True)
   
-#st.write("Probabilidades")
-#st.write(predicao)
+st.write("Probabilidades")
+st.write(predicao)
