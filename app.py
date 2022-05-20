@@ -35,7 +35,7 @@ concave_points2 = st.sidebar.slider("Concave points", 0.0, 0.29100, 0.1)
 symmetry2 = st.sidebar.slider("Symmetry", 0.156500, 0.66380, 0.1)
 fractal_dimension2 = st.sidebar.slider("Fractal dimension", 0.055040, 0.20750, 0.1)
 
-arquivo = open("objetos.pkl", "rb")
+arquivo = open('objetos.pkl', 'rb')
 ss, classifier = pickle.load(arquivo)
 arquivo.close()
 
