@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier  
-from sklearn.metrics import accuracy_score
+import numpy as np
 
 st.title('Breast Cancer Wisconsin')
 st.write("## Verificação se o câncear é maligno ou benigno")
