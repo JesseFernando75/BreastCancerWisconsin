@@ -68,7 +68,7 @@ with open("objetos.pkl", "rb") as arquivo:
   df_sample = df.head()
   df_sample
     
- # df = ss.transform(df)
+  df = ss.transform(df)
   st.write(df)
   
   predicao = classifier.predict(df)
