@@ -53,14 +53,14 @@ df = ss.transform(df)
 st.write(df)
 
 previsoes = classifier.predict(df)
-#st.write(f"A classe é: **{predicao[0]}**")
+st.write(f"A classe é: **{previsoes[0]}**")
   
-#predicao = classifier.predict_proba(df)
-#predicao = pd.DataFrame(predicao)
-#predicao.rename({
-    #0 : 'Maligno',
-    #1 : 'Benigno'
-#}, axis=1, inplace=True)
+previsoes = classifier.predict_proba(df)
+previsoes = pd.DataFrame(previsoes)
+previsoes.rename({
+    0 : 'Maligno',
+    1 : 'Benigno'
+}, axis=1, inplace=True)
   
-#st.write("Probabilidades")
-#st.write(predicao)
+st.write("Probabilidades")
+st.write(previsoes)
