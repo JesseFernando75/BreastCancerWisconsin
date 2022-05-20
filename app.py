@@ -34,8 +34,8 @@ fractal_dimension0 = st.sidebar.slider("Fractal dimension 0", 0.05, 0.98, 0.06, 
 
 st.sidebar.write("### Parâmetros 1")
 
-radius1 = st.sidebar.slider("Radius 1", 0.2, 2.9, 0.4, 0.1)
-texture1 = st.sidebar.slider("Texture 1", 0.4, 5.0, 1.3, 0.1)
+radius1 = st.sidebar.slider("Radius 1", 0.2, 2.9, 0.4, 0.01)
+texture1 = st.sidebar.slider("Texture 1", 0.4, 5.0, 1.3, 0.01)
 smoothness1 = st.sidebar.slider("Smoothness 1", 0.002, 0.032, 0.007, 0.001)
 concave_points1 = st.sidebar.slider("Concave points 1", 0.0, 0.053, 0.01, 0.01)
 symmetry1 = st.sidebar.slider("Symmetry 1", 0.008, 0.079, 0.020, 0.01)
