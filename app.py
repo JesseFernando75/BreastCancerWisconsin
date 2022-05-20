@@ -77,7 +77,7 @@ with open("objetos.pkl", "rb") as arquivo:
   predicao = classifier.predict_proba(df)
   predicao = pd.DataFrame(predicao)
   predicao.rename({
-     'M : 0,
+     'M' : 0,
      'B : 1
   }, axis=1, inplace=True)
   
