@@ -6,7 +6,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 st.title('Breast Cancer Wisconsin')
 st.write("## Verificação se o câncear é maligno ou benigno")
-st.write("## Breast Cancer Wisconsin")
 
 st.sidebar.write("### Parâmetros 0")
 
